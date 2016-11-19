@@ -1,0 +1,4 @@
+#!/bin/bash
+CNAME=`cat CNAME`
+echo $CNAME
+rsync -a -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o LogLevel=quiet" --omit-dir-times --update --delete --delay-updates _site/ deploy@bot.nickvorobiov.com:/var/www/$CNAME

@@ -1,0 +1,67 @@
+@import 'bootstrap-variables';
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+
+  @media (max-width: $screen-xs-max) {
+    h1 {
+      font-size: 24px;
+    }
+    .p-x-lg {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+}
+
+.block-title {
+  font-weight: 700;
+  font-size: 42px !important;
+}
+
+.b-head {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/empty-chair.jpg);
+  background-position: top center;
+  background-size: cover;
+
+  h1 {
+    font-weight: 700;
+    font-size: 42px;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 28px;
+    }
+  }
+}
+
+.b-me {
+  background: #efefef url(../images/b_main.jpg) bottom right no-repeat;
+  background-size: 50%;  
+
+  @media (max-width: $screen-xs-max) {
+    background-size: 100%;
+    padding-bottom: 75%; //240px
+  }
+
+  &__sign {
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    right: 70px;
+    bottom: 45px;
+
+    @media (max-width: 768px) {
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+}
+
+.b-odd {
+  background-color: #efefef;
+}
+
+.btn {
+  white-space: normal;
+}

@@ -1,0 +1,33 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="{{ include.id }}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+        <h4 class="modal-title">{{ include.title }}</h4>
+      </div>
+      <div class="modal-body">
+        <h3 class="text-center">{{ include.headline }}</h3>
+
+        <form method="post" action="http://bot.nickvorobiov.com/order.php" data-toggle="validator">
+          <input type="hidden" name="trello-list-id" value="{{ include.trello-list-id }}" />
+          <input type="hidden" name="redirect" value="{{ include.redirect }}" />
+          <input type="hidden" name="traffic_source" />
+          <input type="hidden" name="roistat" />
+          <div class="form-group">
+            <label for="input-name" class="control-label">Имя</label>
+            <input id="input-name" required="required" name="name" type="text" class="form-control" placeholder="Иван Иванов">
+          </div>
+          <div class="form-group">
+            <label for="input-phone" class="control-label">Телефон</label>
+            <input id="input-phone" required="required" name="phone" type="text" class="form-control" placeholder="+7 (921) 765-43-21">
+          </div>
+          <div class="form-group">
+            <label for="input-email" class="control-label">Электронная почта</label>
+            <input id="input-email" required="required" name="email" type="text" class="form-control" placeholder="ivan@ivanov.com">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block b-join__button">{{ include.buttontext }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

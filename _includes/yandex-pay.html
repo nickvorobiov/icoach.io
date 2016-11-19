@@ -1,0 +1,10 @@
+{% comment %}
+
+
+  Usage:
+
+  {% include yandex-pay.html name="Paying for..." amount="995" redirect="http://somewhere.com/" %}
+
+
+{% endcomment %}
+<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=41001469914505&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets={{ include.name | url_encode }}&targets-hint=&default-sum={{ include.amount }}&button-text=01&fio=on&mail=on&phone=on&successURL={{ include.redirect | url_escape }}" width="450" height="213"></iframe>
