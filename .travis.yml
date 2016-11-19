@@ -16,3 +16,6 @@ deploy:
   script: scripts/deploy.sh
   on:
     branch: gh-pages
+before_install:
+- openssl aes-256-cbc -K $encrypted_ee3571650c75_key -iv $encrypted_ee3571650c75_iv
+  -in deploy-key.enc -out ./deploy-key -d
