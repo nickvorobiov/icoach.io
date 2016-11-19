@@ -1,5 +1,5 @@
 baseurl: ""
-url: "http://pack.icoach.io"
+url: "http://icoach.io"
 markdown: kramdown
 exclude:
   - node_modules
@@ -18,7 +18,7 @@ author: "Николай Воробьёв"
 permalink: /:title/
 
 #vk_app_id: 0
-yandex_metrika: 41015639 # pack.icoach.io
-google_analytics: UA-46456269-29 # pack.icoach.io
+yandex_metrika: 41015639 # icoach.io
+google_analytics: UA-46456269-29 # icoach.io
 facebook_pixel_id: 1064201373633710
 vk_retarget_url: '//vk.com/rtrg?r=qSCN5rX0b39GdbKEaJbtNchsKslPsUSfOzejJPylaW3etTy6uz17Lp*L5l20G/zt36cM6*xS7TcuDYOw5NpO3PYCMr6DXAJ8DjmyeT39VoDwVIw9ErCQ4UZ/Y*eHdCvo1iC4pvpGBvyom3dz0zTyG*Z0SZB8yOkVtTK6D2w22i4-&pixel_id=1000042657'
