@@ -2,11 +2,24 @@
 layout: base
 ---
 
-<div class="p-y-lg block-inverse b-head text-center">
+<div class="p-y-lg b-head">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <p class="pull-right"><nobr>+7 (921) 761-8506</nobr></p>
+        <p>Николай Воробьёв</p>
+      </div>
+    </div>
+  </div>
+
   <div class="container m-y-lg">
-    <h4 class="text-muted">Предложение партнёрства для психологов, тренеров, коучей и&nbsp;специалистов по&nbsp;личностному росту</h4>
-    <h1 class="m-y-lg b-head__title">Приведу вам клиентов без риска&nbsp;&mdash; за&nbsp;процент от&nbsp;прибыли</h1>
-    <a href="#join" class="btn btn-default btn-lg m-t b-head__button js-scr"><b>Обсудить сотрудничество</b></a>
+    <div class="row">
+      <div class="col-sm-9">
+        <h4>Предложение партнёрства для психологов, тренеров, коучей и&nbsp;специалистов по&nbsp;личностному росту</h4>
+        <h1 class="m-y-lg b-head__title">Приведу вам клиентов без&nbsp;риска&nbsp;&mdash; за&nbsp;процент от&nbsp;прибыли</h1>
+        <a href="#join" class="btn btn-default btn-lg m-t b-head__button js-scr"><b>Обсудить сотрудничество</b></a>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -123,27 +136,28 @@ layout: base
         <p>Я&nbsp;хочу, чтобы мы&nbsp;зарабатывали вместе, и&nbsp;каждый занимался своим делом&nbsp;&mdash; вы&nbsp;помогали людям, я&nbsp;делал рекламу.</p>
       </div>
     </div>
+    <div class="frame p-x-lg p-y-lg m-t-lg text-center">
+      <h3><b>Работать за&nbsp;процент от&nbsp;прибыли выгодно&nbsp;&mdash; вы&nbsp;отдаёте деньги за&nbsp;реальных клиентов, а&nbsp;не&nbsp;за&nbsp;сайт или настройку рекламной кампании, которая может не&nbsp;окупиться</b></h3>
+    </div>
   </div>
 </div>
-<div class="block block-bordered block-inverse text-center">
+
+<div class="block b-join p-t-0">
   <div class="container">
-    <h1>Работать за&nbsp;процент от&nbsp;прибыли выгодно&nbsp;&mdash; вы&nbsp;отдаете деньги за&nbsp;реальных клиентов, а&nbsp;не&nbsp;за&nbsp;сайт или настройку рекламной кампании, которая может не&nbsp;окупиться</h1>
-  </div>
-</div>
-<div class="block block-inverse b-join">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h1>Внесите предоплату сегодня и&nbsp;сэкономьте 20%</h1>
-        <p>Чтобы сэкономить 6&nbsp;000 рублей внесите сегодня 5&nbsp;000&nbsp;&mdash; остальное доплатите потом
-          <p>
-            <s>30&nbsp;000</s>
-            <br/><b>24&nbsp;000 за&nbsp;упаковку, если внесете предоплату сегодня</b>
-          </p>
-      </div>
-      <div class="col-md-6">
-        <div class="m-t-lg p-t-md">
-          {% include yandex-pay.html name="Предоплата за упаковку и продвижение" amount="5000" redirect="http://icoach.io/ok/" %}
+    <div class="b-join__content p-y-lg p-x-lg">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Внесите предоплату сегодня и&nbsp;сэкономьте 20%</h2>
+          <p>Чтобы сэкономить 6&nbsp;000 рублей внесите сегодня 5&nbsp;000&nbsp;&mdash; остальное доплатите потом
+            <p>
+              <s>30&nbsp;000</s>
+              <br/><b>24&nbsp;000 за&nbsp;упаковку, если внесете предоплату сегодня</b>
+            </p>
+        </div>
+        <div class="col-md-6">
+          <div class="p-t-md">
+            {% include yandex-pay.html name="Предоплата за упаковку и продвижение" amount="5000" redirect="http://icoach.io/ok/" %}
+          </div>
         </div>
       </div>
     </div>
@@ -154,7 +168,7 @@ layout: base
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1 class="block-title">Что дальше</h1>
+        <h1 class="block-title m-b-md">Что дальше</h1>
         <p>Я&nbsp;планирую развиваться, а&nbsp;не&nbsp;только приводить клиентов. Для этого я&nbsp;объединю крутых тренеров под одним брендом, чтобы раскручиваться вместе и&nbsp;сделать нашу компанию знаком качества на&nbsp;рынке.</p>
         <p>Если вам интересно влиться в&nbsp;компанию сильных специалистов и&nbsp;перенимать опыт, свяжитесь со&nbsp;мной nickvorobiov@icoach.io</p>
       </div>
@@ -164,7 +178,7 @@ layout: base
 
 <div class="block block-bordered">
   <div class="container">
-    <h1 class="block-title">Мой опыт в&nbsp;упаковке тренеров и&nbsp;компаний</h1>
+    <h1 class="block-title m-b-md">Мой опыт в&nbsp;упаковке тренеров и&nbsp;компаний</h1>
     <div class="row">
       <div class="col-md-6">
         <h3><b>Добился как бизнесмен</b></h3>
@@ -195,9 +209,19 @@ layout: base
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <h1 class="block-title text-center">Ответы на&nbsp;вопросы</h1>
+        <h1 class="block-title text-center m-b-lg">Ответы на&nbsp;вопросы</h1>
         <h3><b>Что если у&nbsp;меня сейчас нет денег</b></h3> Я&nbsp;упакую вас бесплатно, если трое ваших друзей закажут услугу по&nbsp;упаковке.
-        <h3><b>Что потребуется от&nbsp;меня: какие ресурсы я&nbsp;должен инвестировать кроме денег</b></h3> Интервью со&nbsp;мной: рассмотрим вопросы о&nbsp;продукте, сформируем ценность. Вы&nbsp;изучите конкурентов, чтобы понять особенность вашей услуги. Генерация контента: вам понадобиться писать статьи или снимать видео о&nbsp;своей работе, чтобы показать экспертность. Общаться с&nbsp;клиентами, чтобы понять их&nbsp;потребности. Проводить вебинары: я&nbsp;соберу горячую аудиторию на&nbsp;вебинар&nbsp;&mdash; вам нужно убедить аудиторию, что вы&nbsp;эксперт. Продавать по&nbsp;готовому скрипту.
+        <h3><b>Что потребуется от&nbsp;меня: какие ресурсы я&nbsp;должен инвестировать кроме денег</b></h3>
+
+        <p>
+          Интервью со&nbsp;мной: рассмотрим вопросы о&nbsp;продукте, сформируем ценность.
+          <br/>Вы&nbsp;изучите конкурентов, чтобы понять особенность вашей услуги.
+          <br/>Генерация контента: вам понадобиться писать статьи или снимать видео о&nbsp;своей работе, чтобы показать экспертность.
+          <br/>Общаться с&nbsp;клиентами, чтобы понять их&nbsp;потребности.
+          <br/>Проводить вебинары: я&nbsp;соберу горячую аудиторию на&nbsp;вебинар&nbsp;&mdash; вам нужно убедить аудиторию, что вы&nbsp;эксперт.
+          <br/>Продавать по&nbsp;готовому скрипту.
+        </p>
+
         <h3><b>Что я&nbsp;конкретно получу</b></h3> При подписании договора вы&nbsp;гарантированно получите клиентов за&nbsp;30% от&nbsp;прибыли. Вы&nbsp;получите рекламные материалы.
       </div>
     </div>

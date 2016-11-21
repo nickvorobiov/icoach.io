@@ -1,7 +1,8 @@
 @import 'bootstrap-variables';
 
 body {
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 
   @media (max-width: $screen-xs-max) {
@@ -15,16 +16,45 @@ body {
   }
 }
 
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .block-title {
   font-weight: 700;
-  font-size: 32px !important;
+  font-size: 42px !important;
   line-height: 1.3 !important;
 }
 
+h1,
+.h1 {
+  font-size: 42px;
+}
+h2,
+.h2 {
+  font-size: 36px;
+}
+h3,
+.h3 {
+  font-size: 30px;
+}
+h4,
+.h4 {
+  font-size: 24px;
+}
+h5,
+.h5 {
+  font-size: 18px;
+}
+h6,
+.h6 {
+  font-size: 14px;
+}
+
 .b-head {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/empty-chair.jpg);
-  background-position: top center;
-  background-size: cover;
+  background: #efefef url(../images/b_main.jpg) bottom right no-repeat;
+  background-size: 60%;
+  min-height: 700px;
 
   h1 {
     font-weight: 700;
@@ -83,10 +113,6 @@ body {
 }
 
 .b-join {
-  background-color: #f5f5f5;
-
-  background-image: url(../images/b_anchor.jpg);
-
   .text-muted {
     color: #777;
   }
@@ -95,4 +121,14 @@ body {
     margin-top: 80px;
     font-weight: 600;
   }
+
+  &__content {
+    background-image: url(/images/bg_gradient.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.frame {
+  border: solid #ccc 5px;
 }
