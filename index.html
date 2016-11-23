@@ -246,11 +246,14 @@ layout: base
 <div class="block b-odd">
   <div class="container">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-4">
         <p>+7 (921) 761-85-06</p>
         <p>ok@nickvorobiov.com</p>
       </div>
-      <div class="col-xs-6 text-right">
+      <div class="col-xs-4">
+        <div id="vk_groups"></div>
+      </div>
+      <div class="col-xs-4 text-right">
         <p>ООО Реальность, Санкт-Петербург, ул. Некрасова 40</p>
         <p><a href="http://soedinennost.com/privacy">Политика конфиденциальности</a></p>
       </div>
@@ -288,3 +291,16 @@ layout: base
     </div>
   </div>
 </div>
+
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
+
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 133491062, {});
+</script>
+
+<!-- VK Widget -->
+<script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 1, width: "auto"}, 133491062);
+</script>
