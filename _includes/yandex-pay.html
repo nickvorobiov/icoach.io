@@ -9,7 +9,10 @@
 {% endcomment %}
 
 <h1>Заказ #<span id="customerNumber-label">...</span></h1>
-<p class="lead">{{ include.name }}</p>
+<p class="lead">
+  {{ include.name }}
+  <br/>{{ include.amount }} руб.
+</p>
 <form action="https://money.yandex.ru/eshop.xml" method="post">
   <input name="shopId" value="20575" type="hidden"/>
   <input name="scid" value="33320" type="hidden"/>
