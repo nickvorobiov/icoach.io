@@ -7,4 +7,20 @@
 
 
 {% endcomment %}
-<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/shop-widget?account=41001469914505&quickpay=shop&payment-type-choice=on&mobile-payment-type-choice=on&writer=seller&targets={{ include.name | url_encode }}&targets-hint=&default-sum={{ include.amount }}&button-text=01&fio=on&mail=on&phone=on&successURL={{ include.redirect | url_escape }}" width="450" height="213"></iframe>
+
+<h1>Заказ #<span id="customerNumber-label">...</span></h1>
+<p class="lead">{{ include.name }}</p>
+<form action="https://money.yandex.ru/eshop.xml" method="post">
+  <input name="shopId" value="20575" type="hidden"/>
+  <input name="scid" value="33320" type="hidden"/>
+  <input name="sum" value="{{ include.amount }}" type="hidden">
+  <input name="customerNumber" id="customerNumber" value="abc000" type="hidden"/>
+  <input name="shopSuccessURL" value="{{ include.redirect }}" type="hidden"/>
+  <input name="offer" value="{{ include.name }}" type="hidden"/>
+  <input type="submit" class="btn btn-primary btn-lg" value="Оплатить"/>
+</form>
+<script type="text/javascript">
+  var customerNumber = parseInt(new Date().getTime()).toString(16);
+  document.getElementById('customerNumber').value = customerNumber;
+  document.getElementById('customerNumber-label').innerText = customerNumber;
+</script>

@@ -1,8 +1,9 @@
 @import 'bootstrap-variables';
 
 body {
-  font-size: 18px;
-  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
 
   @media (max-width: $screen-xs-max) {
@@ -65,36 +66,19 @@ h6,.h6 {
   background: #efefef url(../images/b_main.jpg) bottom right no-repeat;
   background-size: 60%;
   min-height: 700px;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+
+  .btn {
+    font-size: 24px;
+  }
 
   h1 {
     font-weight: 700;
-    font-size: 42px;
+    font-size: 46px;
 
     @media (max-width: $screen-xs-max) {
       font-size: 28px;
-    }
-  }
-}
-
-.b-me {
-  background: #efefef url(../images/b_main.jpg) bottom right no-repeat;
-  background-size: 50%;  
-
-  @media (max-width: $screen-xs-max) {
-    background-size: 100%;
-    padding-bottom: 75%; //240px
-  }
-
-  &__sign {
-    color: white;
-    font-weight: 700;
-    position: absolute;
-    right: 70px;
-    bottom: 45px;
-
-    @media (max-width: 768px) {
-      right: 20px;
-      bottom: 20px;
     }
   }
 }
@@ -105,45 +89,13 @@ h6,.h6 {
 
 .btn {
   white-space: normal;
-}
-
-.diamond {
-  /*border: solid #bbb 3px;*/
-}
-
-.brief {
-  max-width: 200px;
-  margin: 0 auto;
-}
-
-.shadow {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-}
-
-.b-join {
-  .text-muted {
-    color: #777;
-  }
-
-  h1 {
-    margin-top: 80px;
-    font-weight: 600;
-  }
-
-  &__content {
-    background-image: url(/images/bg_gradient.png);
-    background-size: cover;
-    background-position: center;
-  }
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .frame {
-  border: solid #ccc 5px;
+  border: solid #fecb45 5px;
 }
 
-.form-well {
-  background: white;
-  padding: 20px;
+p {
+  margin: 0 0 16px;
 }
